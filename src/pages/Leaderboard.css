@@ -1,0 +1,91 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Apply the font globally */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212; /* Dark background for the body */
+}
+
+/* Leaderboard Container */
+.leaderboard-container {
+  background-color: #1c1c1e; /* Dark gray background */
+  color: #ffffff; /* Light text color */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Header */
+.leaderboard-header {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Centered header */
+  padding: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffcc00; /* Gold color */
+}
+
+/* Leaderboard List */
+.leaderboard-list {
+  width: 100%;
+  max-width: 600px; /* Limit the width */
+  margin: 20px 0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+/* Individual Leaderboard Item */
+.leaderboard-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #2c2c2e; /* Darker background for items */
+  border-bottom: 1px solid #444; /* Divider */
+  transition: background-color 0.3s ease;
+}
+
+.leaderboard-item:hover {
+  background-color: #3a3a3c; /* Highlight on hover */
+}
+
+/* Item Rank */
+.rank {
+  color: #00ffb3; /* Neon green */
+  font-weight: 600;
+}
+
+/* Item Username */
+.username {
+  flex-grow: 1;
+  text-align: center; /* Center username */
+  color: #ffffff;
+  font-weight: 400;
+}
+
+/* Item Coins */
+.coins {
+  color: #ffcc00; /* Gold color for coins */
+  font-weight: 600;
+}
+
+/* Back to Home Button */
+.back-button {
+  margin-top: auto; /* Push to bottom */
+  padding: 10px 20px;
+  background-color: #00ffb3; /* Bright button color */
+  color: #121212; /* Dark text for contrast */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #00e0a3; /* Darker green on hover */
+}

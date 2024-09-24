@@ -1,0 +1,67 @@
+.rewards-container {
+  position: relative;
+  padding: 20px;
+}
+
+.redemption-history-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.redemption-history-btn:hover {
+  background-color: #ff1a1a;
+}
+
+.rewards-list {
+  margin-top: 50px; /* Give space for the button */
+}
+
+.reward-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.reward-card h2 {
+  margin: 0 0 10px 0;
+}
+
+.reward-card button {
+  background-color: #007bff; /* Bootstrap primary */
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reward-card button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  background-color: #333; /* Example background color */
+}
+
+.nav-item {
+  color: white;
+  text-align: center;
+  flex: 1;
+}
+
+.nav-icon {
+  font-size: 24px;
+}

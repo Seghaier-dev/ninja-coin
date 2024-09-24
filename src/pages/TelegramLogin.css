@@ -1,0 +1,15 @@
+/* TelegramLogin.css */
+.telegram-login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1c1c1e;
+    color: white;
+    text-align: center;
+  }
+  
+  #telegram-login {
+    margin-top: 50px;
+  }
+  

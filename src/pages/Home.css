@@ -1,0 +1,138 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Apply the font globally */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212; /* Dark background for the body */
+}
+
+/* Home Container */
+.home-container {
+  background-color: #1c1c1e; /* Dark gray background */
+  color: #ffffff; /* Light text color */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+}
+
+/* Header with level (left) and coin balance (right) */
+.home-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Level on the left, coins on the right */
+  padding: 10px;
+  position: absolute; /* Keeps the header in place while allowing the logo to stay centered */
+  top: 0;
+}
+
+/* Level info on the left */
+.level-info {
+  font-size: 16px;
+  color: #ffcc00; /* Gold color */
+  margin-left: 20px;
+  font-weight: 600; /* Make it bold for a cleaner look */
+}
+
+/* Coin balance on the right */
+.coin-balance {
+  font-size: 16px;
+  color: #00ffb3; /* Bright neon green */
+  margin-right: 20px;
+  font-weight: 600;
+}
+
+/* Logo container (centered) */
+.coin-animation-area {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Disable interaction with animated coins */
+}
+
+/* Coin appearance and animation */
+.coin {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #ffcc00; /* Coin color (gold) */
+  border-radius: 50%;
+  animation: fly 1s ease-in-out forwards;
+}
+
+/* Coin flying animation */
+@keyframes fly {
+  0% {
+    transform: scale(0.5) translate(-50%, -50%);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5) translate(-200%, -200%); /* Coin flies up */
+    opacity: 0;
+  }
+}
+
+/* Positioning and styling adjustments */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  cursor: pointer;
+  position: relative;
+}
+
+.ninja-logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #ffcc00; /* Optional border styling */
+  object-fit: contain;
+}
+
+/* Bottom Navigation Bar */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #2c2c2e; /* Darker background for the navigation */
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-top: 2px solid #00ffb3;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff; /* Light color for nav items */
+  font-size: 18px;
+  font-weight: 600; /* Slightly bolder for better readability */
+  transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+  color: #00ffb3; /* Highlight color on hover */
+}
+
+.nav-icon {
+  font-size: 24px;
+  margin-bottom: 5px;
+  transition: transform 0.3s ease;
+}
+
+.nav-item:hover .nav-icon {
+  transform: scale(1.2); /* Slight zoom effect on hover */
+}
+
+.nav-item.active {
+  color: #ffcc00; /* Highlighted selected item */
+}

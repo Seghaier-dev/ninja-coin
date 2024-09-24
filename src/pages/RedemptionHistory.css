@@ -1,0 +1,67 @@
+/* RedemptionHistory.css */
+.redemption-history-container {
+    background-color: #1c1c1e;
+    color: #ffffff;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #ffcc00; /* Gold color for header */
+  }
+  
+  .redemption-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .redemption-item {
+    background-color: #2c2c2e;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .reward-info h2 {
+    color: #ffcc00; /* Highlighted reward name */
+  }
+  
+  .date, .points, .reward-code, .reward-description, .reward-status, .reward-id {
+    margin: 5px 0;
+    color: #b0b0b0; /* Light grey for less important info */
+  }
+  
+  .points span {
+    color: #00ffb3; /* Neon green for points */
+  }
+  
+  /* No rewards message */
+  .no-rewards {
+    text-align: center;
+    color: #ff9999; /* Light pink for no rewards message */
+  }
+  
+  /* Bottom navigation styling */
+  .bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: #333;
+  }
+  
+  .nav-item {
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .nav-icon {
+    font-size: 24px;
+  }
+  

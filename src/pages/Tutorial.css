@@ -1,0 +1,33 @@
+.tutorial-container {
+    background-color: #1c1c1e;
+    color: #fff;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .tutorial-step {
+    background-color: #2c2c2e;
+    padding: 15px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .tutorial-step h2 {
+    color: #00ffb3;
+  }
+  
+  button {
+    background-color: #00ffb3;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #1c1c1e;
+  }
+  
